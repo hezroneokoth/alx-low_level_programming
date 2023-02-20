@@ -13,7 +13,7 @@ int main(void)
 	{
 		putchar(c);
 	}
-	puts("\nPrinting the full alphabet in uppercase");	
+	puts("\nPrinting the full alphabet in uppercase");
 	for (char c = 'A'; c <= 'Z'; c++)
 	{
 		putchar(c);
