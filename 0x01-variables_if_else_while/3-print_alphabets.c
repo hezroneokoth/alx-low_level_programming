@@ -8,15 +8,16 @@
  */
 int main(void)
 {
-	puts("Printing the full alphabet in lowercase");
-	for (char c = 'a'; c <= 'z'; c++)
+	printf("Printing the full alphabet in lowercase\n");
+	for (int c = 'a'; c <= 'z'; c++)
 	{
 		putchar(c);
 	}
-	puts("\nPrinting the full alphabet in uppercase");
-	for (char c = 'A'; c <= 'Z'; c++)
+	puts("\nPrinting the full alphabet in uppercase\n");
+	for (int c = 'A'; c <= 'Z'; c++)
 	{
 		putchar(c);
 	}
+	putchar('\n');
 	return (0);
 }
