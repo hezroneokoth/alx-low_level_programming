@@ -9,12 +9,12 @@
 int main(void)
 {
 	printf("Printing the full alphabet in lowercase\n");
-	for (int c = 'a'; c <= 'z'; c++)
+	for (char C = 'a'; C <= 'z'; c++)
 	{
 		putchar(c);
 	}
-	puts("\nPrinting the full alphabet in uppercase\n");
-	for (int c = 'A'; c <= 'Z'; c++)
+	printf("\nPrinting the full alphabet in uppercase\n");
+	for (char C = 'A'; C <= 'Z'; c++)
 	{
 		putchar(c);
 	}
