@@ -2,13 +2,13 @@
 #include "main.h"
 
 /**
- * main - prints the numbers from 1 to 100, followed by a new line
+ * main - Prints the numbers from 1 to 100, followed by a new line
  * But instead of printing the number
  * print 'Fizz' for multiples of 3
  * 'Buzz' for multiples of 5
  * and 'FizzBuzz' for multiples of both 3 and 5
  *
- * Return: void
+ * Return: Always 0
  */
 int main(void)
 {
@@ -35,6 +35,5 @@ int main(void)
 	}
 
 	printf("\n");
-
 	return (0);
 }
