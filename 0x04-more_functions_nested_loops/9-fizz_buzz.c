@@ -1,8 +1,4 @@
 #include <stdio.h>
-#include "main.h"
-
-#define FIZZ 3
-#define BUZZ 5
 
 /**
  * main - Prints the numbers from 1 to 100, followed by a new line
@@ -15,28 +11,33 @@
  */
 int main(void)
 {
-	int number;
+	int i;
 
-	for (number = 1; number <= 100; number++)
+	for (i = 1; i <= 100; i++)
 	{
-		if (number % FIZZ == 0 && number % BUZZ == 0)
+		if (i % 3 == 0 && i % 5 != 0)
 		{
-			printf("FizzBuzz ");
+			printf(" Fizz");
 		}
-		else if (number % FIZZ == 0)
+		else if (i % 5 == 0 && i % 3 != 0)
 		{
-			printf("Fizz ");
+			printf(" Buzz");
 		}
-		else if (number % BUZZ == 0)
+		else if (i % 3 == 0 && i % 5 == 0)
 		{
-			printf("Buzz ");
+			printf(" FizzBuzz");
+		}
+		else if (i == 1)
+		{
+			printf("%d", i);
 		}
 		else
 		{
-			printf("%d ", number);
+			printf(" %d", i);
 		}
 	}
 
 	printf("\n");
+
 	return (0);
 }
