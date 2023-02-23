@@ -4,8 +4,8 @@
 /**
  * print_triangle - prints a triangle, followed by a new line.
  * @size: size of the triangle
- * 
- * Return: print new line if size is 0 or less
+ *
+ * Return: new line if size is 0 or less
  */
 
 void print_triangle(int size)
