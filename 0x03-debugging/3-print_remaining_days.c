@@ -26,12 +26,10 @@ void print_remaining_days(int month, int day, int year)
 		if (month == 2 && day == 29)
 		{
 			printf("Invalid date: %02d/%02d/%04d\n", month, day, year);
-			return;
+			return;/*The date is invalid because this February falls in leap year*/
 		}
-		else
-		{
-			printf("Day of the year: %d\n", day);
-			printf("Remaining days: %d\n", 365 - day);
-		}
+
+		printf("Day of the year: %d\n", day);
+		printf("Remaining days: %d\n", 365 - day);
 	}
 }
