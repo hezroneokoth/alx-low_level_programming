@@ -1,3 +1,4 @@
+#include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
@@ -9,21 +10,17 @@
  */
 int main(void)
 {
-	char password[7];
-	int i, ascii;
+	char password[12];
+	int i;
+	const char valid_chars[] = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 
 	srand(time(NULL));
 
-	for (i = 0; i < 6; i++)
+	for (i = 0; i < 11; i++)
 	{
-		ascii = rand() % 77 + 48;
-		if (ascii >= 58 && ascii <= 64)
-			ascii += 7;
-		else if (ascii >= 91 && ascii <= 96)
-			ascii += 6;
-		password[i] = ascii;
+		password[i] = valid_chars[rand() % 62];
 	}
-	password[6] = '\0';
+	password[11] = '\0';
 
 	printf("%s\n", password);
 
