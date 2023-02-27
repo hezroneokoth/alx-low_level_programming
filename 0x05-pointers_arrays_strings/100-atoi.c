@@ -36,6 +36,10 @@ int _atoi(char *s)
 
 		s++;
 	}
+	if (num == INT_MIN)
+	{
+		return (INT_MIN);
+	}
 
 	return (num * sign);
 }
