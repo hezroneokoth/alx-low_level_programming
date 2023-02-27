@@ -14,6 +14,10 @@ int _atoi(char *s)
 	int sign = 1;
 	int digit;
 
+	while (*s == ' ')
+	{
+		s++;
+	}
 	while (*s != '\0')
 	{
 		if (*s == '-')
