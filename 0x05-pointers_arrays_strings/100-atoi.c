@@ -13,11 +13,8 @@ int _atoi(char *s)
 	int num = 0;
 	int sign = 1;
 	int digit;
+	int first_digit_encountered = 0
 
-	while (*s == ' ')
-	{
-		s++;
-	}
 	while (*s != '\0')
 	{
 		if (*s == '-')
@@ -28,8 +25,9 @@ int _atoi(char *s)
 		{
 			digit = *s - '0';
 			num = num * 10 + digit;
+			first_digit_encountered = 1;
 		}
-		else if (num > 0)
+		else if (first_digit_encountered)
 		{
 			break;
 		}
