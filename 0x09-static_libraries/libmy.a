@@ -1,0 +1,1 @@
+ar rcs src/libmy.a src/_putchar.o src/_islower.o src/_isalpha.o src/_abs.o src/_isupper.o src/_isdigit.o src/_strlen.o src/_puts.o src/_strcpy.o src/_atoi.o src/_strcat.o src/_strncat.o src/_strncpy.o src/_strcmp.o src/_memset.o src/_memcpy.o src/_strchr.o src/_strspn.o src/_strpbrk.o src/_strstr.o
