@@ -7,12 +7,13 @@ newline db 10, 0
 
 section .text
 main:
-mov rdi, hello
-mov rsi, 0
-call printf
-mov rdi, newline
-mov rsi, 0
-call printf
+    mov rdi, hello
+    mov rsi, 0
+    call printf
 
-xor eax, eax
-ret
+    mov rdi, newline
+    mov rsi, 0
+    call printf
+
+    xor eax, eax
+    ret
